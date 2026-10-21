@@ -1,0 +1,39 @@
+{
+  "manifest_version": "0.4",
+  "name": "edgartools",
+  "display_name": "EdgarTools (SEC EDGAR)",
+  "version": "5.58.0",
+  "description": "Query and analyze SEC filings using EdgarTools -- company profiles, financials, filings, ownership, full-text search.",
+  "long_description": "Exposes EdgarTools as MCP tools for researching SEC filings: company profiles and financials, filing search and retrieval, ownership/insider data, proxy statements, fund data, screening, trend analysis, and cross-company comparison. Reads only -- makes no filings or submissions.",
+  "author": {
+    "name": "carrera777"
+  },
+  "server": {
+    "type": "uv",
+    "entry_point": "src/server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": ["run", "${__dirname}/src/server.py"],
+      "env": {
+        "EDGAR_IDENTITY": "${user_config.edgar_identity}"
+      }
+    }
+  },
+  "keywords": ["sec", "edgar", "filings", "finance", "10-K", "10-Q"],
+  "license": "MIT",
+  "compatibility": {
+    "claude_desktop": ">=1.0.0",
+    "platforms": ["win32", "darwin", "linux"],
+    "runtimes": {
+      "python": ">=3.10"
+    }
+  },
+  "user_config": {
+    "edgar_identity": {
+      "type": "string",
+      "title": "SEC EDGAR Identity",
+      "description": "Required by SEC: your name and email, e.g. 'Jane Doe jane.doe@example.com'",
+      "required": true
+    }
+  }
+}
