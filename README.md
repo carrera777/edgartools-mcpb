@@ -70,3 +70,4 @@ The extension pins nothing, so it picks up the latest `edgartools` release the n
 - Data comes straight from the SEC's public EDGAR system. This is not an SEC product and is not affiliated with the SEC.
 - The extension is read only. It cannot file or submit anything.
 - Claude Chrome and Claude for Excel cannot use this extension. It needs a local host like Claude Desktop or Claude Code.
+- Created and maintained by [carrera777](https://github.com/carrera777/edgartools-mcpb). If you fork or redistribute this, please keep the credit and link back.

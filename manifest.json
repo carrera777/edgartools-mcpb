@@ -6,7 +6,8 @@
   "description": "Query and analyze SEC filings using EdgarTools -- company profiles, financials, filings, ownership, full-text search.",
   "long_description": "Exposes EdgarTools as MCP tools for researching SEC filings: company profiles and financials, filing search and retrieval, ownership/insider data, proxy statements, fund data, screening, trend analysis, and cross-company comparison. Reads only -- makes no filings or submissions.",
   "author": {
-    "name": "carrera777"
+    "name": "carrera777",
+    "url": "https://github.com/carrera777/edgartools-mcpb"
   },
   "server": {
     "type": "uv",
